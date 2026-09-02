@@ -20,3 +20,8 @@ frontend/dist/
 .DS_Store
 Thumbs.db
 
+# TypeScript generado
+*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
