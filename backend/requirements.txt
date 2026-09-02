@@ -6,4 +6,4 @@ psycopg[binary]
 python-dotenv
 pytest
 pytest-cov
-
+argon2-cffi
