@@ -8,7 +8,7 @@
 
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; min-height: 100vh; }
-button, input, textarea { font: inherit; }
+button, input, textarea, select { font: inherit; }
 
 .app-shell { max-width: 1280px; margin: 0 auto; padding: 32px; }
 .app-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 28px; }
@@ -27,8 +27,8 @@ h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); }
 .section-heading { margin-bottom: 4px; }
 .list-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 18px; }
 label { display: grid; gap: 7px; font-weight: 700; color: #334155; }
-input, textarea { width: 100%; border: 1px solid #cbd5e1; border-radius: 9px; padding: 11px 12px; color: #1f2937; background: #fff; }
-input:focus, textarea:focus { outline: 3px solid rgb(47 133 131 / 18%); border-color: #2f8583; }
+input, textarea, select { width: 100%; border: 1px solid #cbd5e1; border-radius: 9px; padding: 11px 12px; color: #1f2937; background: #fff; }
+input:focus, textarea:focus, select:focus { outline: 3px solid rgb(47 133 131 / 18%); border-color: #2f8583; }
 .form-two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .profile-fieldset { margin: 0; border: 1px solid #cbd5e1; border-radius: 9px; padding: 12px; }
 .profile-fieldset legend { padding: 0 5px; color: #334155; font-weight: 700; }
