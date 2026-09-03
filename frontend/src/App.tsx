@@ -1,10 +1,13 @@
 import { useState } from "react";
 
+import { OpcionesMenuPage } from "./pages/OpcionesMenuPage";
 import { PerfilesPage } from "./pages/PerfilesPage";
 import { UsuariosPage } from "./pages/UsuariosPage";
 
 export default function App() {
-  const [module, setModule] = useState<"perfiles" | "usuarios">("perfiles");
+  const [module, setModule] = useState<"perfiles" | "usuarios" | "menu">(
+    "perfiles",
+  );
 
   return (
     <main className="app-shell">
@@ -28,8 +31,16 @@ export default function App() {
         >
           Usuarios
         </button>
+        <button
+          className={module === "menu" ? "active" : ""}
+          onClick={() => setModule("menu")}
+        >
+          Opciones de menú
+        </button>
       </nav>
-      {module === "perfiles" ? <PerfilesPage /> : <UsuariosPage />}
+      {module === "perfiles" && <PerfilesPage />}
+      {module === "usuarios" && <UsuariosPage />}
+      {module === "menu" && <OpcionesMenuPage />}
     </main>
   );
 }
